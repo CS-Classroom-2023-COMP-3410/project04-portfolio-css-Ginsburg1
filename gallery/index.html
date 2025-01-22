@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensures mobile devices render at device width in CSS pixels -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Gallery (1 / 2 / 3 columns)</title>
+
+  <style>
+
+
+    p {
+      color: #004080;
+      font-size: 1.2em;
+      text-align: center;
+      margin: 20px;
+    }
+
+    .gallery {
+        /* Enable flexbox and allow wrapping */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  /* Center images when they don't fill a row */
+        gap: 10px;                /* Spacing between images */
+        margin: 20px auto;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+}
+
+  </style>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <input type="checkbox" id="navbar-toggle" class="navbar-checkbox">
+  <label for="navbar-toggle" class="navbar-toggle" aria-label="Toggle navigation">
+      <span class="navbar-icon"></span>
+      <span class="navbar-icon"></span>
+      <span class="navbar-icon"></span>
+  </label>
+  <div class="navbar-container">
+      <a href="../index.html" class="navbar-link">Home</a>
+      <a href="../about/index.html" class="navbar-link">About</a>
+      <a href="../gallery/index.html" class="navbar-link">Gallery</a>
+      <a href="../LinksDocuments/index.html" class="navbar-link">Links and Documents</a>
+      <a href="../contact/index.html" class="navbar-link">Contact</a>
+  </div>
+
+  <header>
+    <h1 class="header-title">Gallary</h1>
+  </header>
+
+  <p>
+    Welcome to my gallery! Here are some of the images I took while studying abroad in the fall of 2024.
+  </p>
+
+  <section class="gallery">
+    <img src="../gallery/images/image1.jpeg" alt="Image 1">
+    <img src="../gallery/images/image2.jpeg" alt="Image 2">
+    <img src="../gallery/images/image3.jpeg" alt="Image 3">
+    <img src="../gallery/images/image4.jpeg" alt="Image 4">
+    <img src="../gallery/images/image5.jpeg" alt="Image 5">
+    <img src="../gallery/images/image6.jpeg" alt="Image 6">
+    <img src="../gallery/images/image7.jpeg" alt="Image 7">
+    <img src="../gallery/images/image8.jpeg" alt="Image 8">
+    <img src="../gallery/images/image9.jpeg" alt="Image 9">
+    <img src="../gallery/images/image10.jpeg" alt="Image 10">
+    <img src="../gallery/images/image11.jpeg" alt="Image 11">
+    <img src="../gallery/images/image12.jpeg" alt="Image 12">
+    <img src="../gallery/images/image13.jpeg" alt="Image 13">
+    <img src="../gallery/images/image14.jpeg" alt="Image 14">
+    <img src="../gallery/images/image15.jpeg" alt="Image 15">
+    <img src="../gallery/images/image16.jpeg" alt="Image 16">
+    <img src="../gallery/images/image17.jpeg" alt="Image 17">
+    <img src="../gallery/images/image18.jpeg" alt="Image 18">
+    <img src="../gallery/images/image19.jpeg" alt="Image 19">
+    <!-- Add more images as needed -->
+  </section>
+
+  <!-- Back Button -->
+  <section class="centered-section">
+      <a href="../index.html" class="back-button">Back to Home</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

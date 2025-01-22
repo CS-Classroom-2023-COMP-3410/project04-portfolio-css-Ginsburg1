@@ -1,0 +1,136 @@
+:root {
+    --footer-color: midnightblue;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.navbar {
+    overflow: hidden;
+    border: 2px solid indigo; /* Add border around the navbar */
+    padding: 10px; /* Add some padding inside the border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.navbar-brand, .navbar-link {
+    color: indigo;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar-link:hover {
+    background-color: white;
+}
+
+.navbar-checkbox {
+    display: none;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-icon {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar-checkbox:checked + .navbar-toggle + .navbar-container {
+        display: flex;
+    }
+
+    .navbar-link {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.header-title {
+    text-align: center;
+    color: indigo;
+}
+
+.centered-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-text {
+    color: midnightblue;
+    font-size: 1.2em;
+}
+
+.contact-info {
+    font-size: 1em;
+    color: MidnightBlue;
+}
+
+.contact-link {
+    color: MidnightBlue;
+    text-decoration: none;
+}
+
+.form-label {
+    color: MidnightBlue;
+}
+
+.form-input, .form-textarea {
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 5px;
+}
+
+.back-button {
+    background-color: indigo;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--footer-color);
+}
